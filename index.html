@@ -6,10 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body id="bodyColor">
     <main class="w-11/12 mx-auto">
       <header
-        class="my-4 px-3 rounded-lg"
+        class="my-4 px-3 rounded-lg bg-white"
         style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
       >
         <nav class="flex justify-between items-center py-3">
@@ -21,11 +21,11 @@
           </div>
           <div class="flex items-center gap-10">
             <div class="flex items-center gap-1 font-semibold text-lg">
-              <img class="w-6" src="assets/checkbox.png" alt="" /><span
+              <img class="w-6" src="assets/checkbox.png" alt="" /><span id="headerCount"
                 >23</span
               >
             </div>
-            <div class="cursor-pointer">
+            <div class="cursor-pointer " id="bgChange">
               <img class="w-8" src="assets/theme-btn.png" alt="" />
             </div>
           </div>
@@ -34,16 +34,16 @@
 
       <section class="my-4 p-4" >
         <div class="grid grid-cols-4 gap-4" >
-          <div class="col-span-3 rounded-lg" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px">
+          <div class="col-span-3 rounded-lg bg-white" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px">
             <div class="grid grid-cols-4 gap-1">
               <div class="flex gap-3 py-3  justify-center items-center bg-[#F4F7FF] m-2 rounded-lg">
                 <img class="w-7 h-7" src="assets/checkbox.png" alt="">
                 <div>
                     <p>Task Assigned</p>
-                    <h1 class="font-semibold text-xl">06</h1>
+                   <h1 id="taskHeading" lass="font-semibold text-xl"></h1>
                 </div>
               </div>
-              <div class="col-span-2 m-2 rounded-lg bg-gradient-to-r from-[#3752FD] to-[#6C7FFA]">
+              <div id="blogSection" class="col-span-2 m-2 rounded-lg bg-gradient-to-r from-[#3752FD] to-[#6C7FFA] cursor-pointer">
                  <div class="flex gap-2 items-center justify-center">
                    <img src="assets/board.png" alt="">
                    <h1 class="text-xl text-white w-3/6">Discover Something New Today!</h1>
@@ -59,10 +59,10 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2">
+            <div id="card_box" class="grid grid-cols-3 gap-2">
                 <div class="m-2 bg-[#F4F7FF] rounded-lg">
                     <button class="bg-white mx-3 mt-2 py-2 px-3 rounded-lg">ShopEase</button>
-                    <h1 class="text-xl font-semibold px-3 py-2">Fix Mobile Button Issue </h1>
+                    <h1 id="fixMobile" class="text-xl font-semibold px-3 py-2">Fix Mobile Button Issue </h1>
                     <p class="mx-3 text-gray-500">Debug using Chrome DevTools, check for overlapping</p>
                     <div class="flex justify-between items-center mx-3 py-2">
                         <div>
@@ -70,7 +70,7 @@
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="py-2 px-3 bg-[#3752FD] text-white font-medium rounded-lg">Completed</button>
+                            <button  id="ShopEaseBtn" class="py-2 px-3 bg-[#3752FD] text-white font-medium rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                             <h2 class="font-medium">21 March 2025</h2>
                         </div>
                         <div>
-                            <button class="py-2 px-3 bg-[#3752FD] text-white font-medium rounded-lg">Completed</button>
+                            <button id="Glassdoar" class="py-2 px-3 bg-[#3752FD] text-white font-medium rounded-lg">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -146,10 +146,22 @@
                 </div>
             </div>
           </div>
-          <div class="border-solid border-2 border-gray-500" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px">dist</div>
+          <div class="rounded-lg bg-white" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px">
+            <div class="flex flex-col items-center mt-7">
+                <div class="flex gap-2"><img src="assets/activity.png" alt=""> <h1>Activity Log</h1></div>
+                <button id="clearBtn" class="bg-blue-700 py-2 px-3 my-2 text-white font-medium">Clear History</button>
+            </div>
+            <div id="history">
+             
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <script src="scripts/date.js"></script>
+    <script src="scripts/logical.js"></script>
+    <script src="scripts/utiliy.js"></script>
+    <script src="scripts/bgChange.js"></script>
+    <script src="scripts/history.js"></script>
   </body>
 </html>
