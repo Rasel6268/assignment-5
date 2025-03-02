@@ -1,45 +1,93 @@
-const card = document.querySelector('#card_box');
-const btn = document.getElementById('ShopEaseBtn')
-const btnGlassdoar = document.getElementById('Glassdoar')
-const headerCount = document.getElementById('headerCount').innerText;
-const convertValue1 = parseInt(headerCount)
-const historyInfo = document.getElementById('history')
-const buttonTittle = document.getElementById('fixMobile').innerText;
+
+const historyInf = document.getElementById('history')
+const fixMobileTittle = document.getElementById('fixMobile').innerText;
+const GlassdoarTittle = document.getElementById('GlassdoarHeader').innerText;
+const CloudSyncHeader = document.getElementById('CloudSyncHeader').innerText;
+const SwiftPayheader = document.getElementById('SwiftPayheader').innerText;
+const MetaHeader = document.getElementById('MetaHeader').innerText;
+const operAi = document.getElementById('operAi').innerText;
 
 
-const count = card.childElementCount;
-const elementLength = count.toString().padStart(2, 0)
-const convertValue = parseInt(elementLength)
 
-document.getElementById('taskHeading').innerHTML = `
-<span>${elementLength}</span>
-`
 
 
 document.getElementById('ShopEaseBtn').addEventListener('click', function () {
-    alert("hello")
-    const total = convertValue - 1
-    const string = total.toString().padStart(2, 0)
-    document.getElementById('taskHeading').innerHTML = `
-     <span>${string}</span>
-`
-    const calculate = convertValue1 + 1
-    document.getElementById('headerCount').innerText = calculate;
-    btn.setAttribute('disabled', true);
-    btn.classList.add("opacity-50", "cursor-not-allowed");
     const div = document.createElement('div')
-    
+
     div.innerHTML = `
     <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
-              <p>You have complete the Task ${buttonTittle} at ${time}</p>
+              <p>You have complete the Task ${fixMobileTittle} at ${time}</p>
              </div>
     `
-    historyInfo.appendChild(div)
+    historyInf.appendChild(div)
 
 
 })
-document.getElementById('blogSection').addEventListener('click', function () {
-    window.location.href = './blog.html'
+
+document.getElementById('Glassdoar').addEventListener('click', function () {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
+              <p>You have complete the Task ${GlassdoarTittle} at ${time}</p>
+             </div>
+    `
+    historyInf.appendChild(div)
+
+
 })
+
+document.getElementById('CloudSync').addEventListener('click', function () {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
+              <p>You have complete the Task ${CloudSyncHeader} at ${time}</p>
+             </div>
+    `
+    historyInf.appendChild(div)
+
+
+})
+
+document.getElementById('SwiftPay').addEventListener('click', function () {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
+              <p>You have complete the Task ${SwiftPayheader} at ${time}</p>
+             </div>
+    `
+    historyInf.appendChild(div)
+
+
+})
+
+document.getElementById('Meta').addEventListener('click', function () {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
+              <p>You have complete the Task ${MetaHeader} at ${time}</p>
+             </div>
+    `
+    historyInf.appendChild(div)
+
+
+})
+
+document.getElementById('openAi').addEventListener('click', function () {
+    const div = document.createElement('div')
+
+    div.innerHTML = `
+    <div class="bg-gray-100 mx-3 my-2 py-2 px-3 rounded-lg">
+              <p>You have complete the Task ${operAi} at ${time}</p>
+             </div>
+    `
+    historyInf.appendChild(div)
+
+
+})
+
 
 

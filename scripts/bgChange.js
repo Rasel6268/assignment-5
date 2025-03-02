@@ -3,7 +3,6 @@ const colorContainer = ['#FFBF00','#CCCCFF','#40E0D0','#FF00FF','#9FE2BF','#FFFF
 
 let indexOfColor = 0;
 document.getElementById('bgChange').addEventListener('click',function(){
-    // body.style.backgroundColor = colorContainer[indexOfColor];
     document.body.style.backgroundColor = colorContainer[indexOfColor]
     indexOfColor++
     if(indexOfColor >= colorContainer.length){
