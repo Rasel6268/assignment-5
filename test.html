@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="example">
+        <p>Visible Text</p>
+        <p style="display: none;">Hidden Text</p>
+    </div>
+    
+    <button onclick="showText()">Get Text</button>
+    <script>
+        function showText() {
+    let div = document.getElementById("example");
+
+    console.log("textContent:", div.textContent); 
+    // Outputs: "Visible Text Hidden Text"
+
+    console.log("innerText:", div.innerText);     
+    // Outputs: "Visible Text"
+}
+
+    </script>
+</body>
+</html>

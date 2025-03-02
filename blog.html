@@ -42,12 +42,12 @@
             <h1 class="font-medium">
               There are many way to Select an element in DOM
             </h1>
-            <ol class="list-decimal px-6 font-medium text-gray-700">
-              <li>document.getElementById</li>
-              <li>document.getElementByTagName</li>
-              <li>document.getElementsByClassName</li>
-              <li>document.querySelector</li>
-              <li>document.querySelectorAll</li>
+            <ol class="list-decimal px-7 font-medium text-gray-700">
+              <li><code>document.getElementById</code></li>
+              <li><code>document.getElementByTagName</code>;</li>
+              <li><code>document.getElementsByClassName</code></li>
+              <li><code>document.querySelector</code></li>
+              <li><code>document.querySelectorAll</code></li>
             </ol>
           </div>
         </div>
@@ -55,48 +55,48 @@
           class="rounded-lg py-3 px-3 my-3"
           style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
         >
-          <h1 class="font-medium">
+        <h1 class="text-2xl font-bold py-2">
             Question-2: What is the difference between innerHTML, innerText, and
             textContent ?
           </h1>
           <p class="px-6 font-medium text-gray-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-            omnis totam aliquam vitae nesciunt labore neque tempora molestias,
-            aperiam fuga eum commodi provident culpa! Explicabo dicta ab commodi
-            voluptatibus voluptas.
+           <code>textContent</code>: <code>textContent</code> return the complete text content with hidden text or visible text on the other hand <code>innerText</code> return only the visible text content
+           <code>InnerHTML</code>: Using <code>innerHTML</code> allows us to see exactly what’s in the HTML markup contained within a string, including elements like spacing, line breaks and formatting. 
           </p>
         </div>
         <div
           class="rounded-lg py-3 px-3 my-3"
           style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
         >
-          <h1>Question-3: What is event delegation in the DOM?</h1>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam possimus
-          sapiente iste molestiae odit fugiat pariatur vero, accusantium enim
-          doloremque.
-        </div>
-        <div
-          class="rounded-lg py-3 px-3 my-3"
-          style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
-        >
-          <h1>Question-4: What is event bubbling in the DOM?</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            cum porro labore dignissimos aperiam aut repudiandae qui id
-            molestiae sapiente?
+        <h1 class="text-2xl font-bold py-2">
+          Question-3: What is event delegation in the DOM?
+        </h1>
+          <p class="px-6 py-1 font-medium text-gray-700">ইভেন্ট ডেলিগেশন হল এক ধরনের ইভেন্ট-হ্যান্ডলিং কৌশল যা ইভেন্ট বাবলিং-এর উপর ভিত্তি করে কাজ করে। এটি মূলত তখনই কার্যকর হয় যখন আমাদের DOM-এ প্রচুর সংখ্যক ইলিমেন্ট থাকে এবং প্রতিটি ইলিমেন্টের জন্য আলাদা করে ইভেন্ট হ্যান্ডলার সংযুক্ত করা  অনেক সময় এর বেপার অনেক কোড লিখতে হয়।
+            একি কোড বার বার রিপিট হয়।একি কোড বার বার যাতে রিপিট না হয় তার জন্য আমরা event delegation ব্যবহার করি।
           </p>
         </div>
         <div
           class="rounded-lg py-3 px-3 my-3"
           style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
         >
-          <h1>
+        <h1 class="text-2xl font-bold py-2">Question-4: What is event bubbling in the DOM?</h1>
+          <p class="px-6 py-1 font-medium text-gray-700">
+            যখন কোন Element এ EventListener যোগ করি এবং ক্লিক করি তখন সে তার terget কে capture করে,যখন সে তার target কে খুজে পায় তখন ধাপে ধাপে bubbling করে childElement কোন EventListener আছে  কি নাহ তা খুজে।
+          </p>
+        </div>
+        <div
+          class="rounded-lg py-3 px-3 my-3"
+          style="box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px"
+        >
+        <h1 class="text-2xl font-bold py-2">
             Question-5: How do you create, add, and remove elements using
             JavaScript?
           </h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate,
-          quo ipsum libero quod optio explicabo eligendi exercitationem
-          inventore tempora sint.
+          <p class="px-6 py-1 font-medium text-gray-700">
+            <p class="px-6 py-1 font-medium text-gray-700">Create Element: <code>doccument.createElement(elementName)</code></p>
+            <p class="px-6 py-1 font-medium text-gray-700">Add Element: <code>targetedElement.appendChild(addedElement)</code></p>
+            <p class="px-6 py-1 font-medium text-gray-700">Remove Element: <code>removeChild</code> or <code>innerHtml = ''</code></p>
+          </p>
         </div>
       </section>
     </main>
